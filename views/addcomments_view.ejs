@@ -1,0 +1,35 @@
+<%- include("header"); %>
+<div style="width:1200px; height:auto; min-height:500px; border:1px solid red;">
+
+    <form action="addCommentSubmit" method="post">
+        <div>
+            Enter user id:
+            <div>
+                <input type="number" name="userid"/>
+            </div>
+        </div>
+        <div>
+            Enter pen id:
+            <div>
+                <input type="number" name="penid"/>
+            </div>
+        </div>
+        <div>
+            Enter comment id:
+            <div>
+                <input type="number" name="commentid"/>
+            </div>
+        </div>
+        <div>
+            Enter comment text:
+            <div>
+                <input type="text" name="commenttext"/>
+            </div>
+        </div>
+        <p>
+            <input type="submit" value="Save"/>
+        </p>
+    </form>
+
+</div>
+<%- include("footer"); %>

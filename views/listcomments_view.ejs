@@ -1,0 +1,22 @@
+<%- include("header"); %>
+<div style="width:1200px; height:auto; min-height:500px; border:1px solid red;">
+    <table align="center">
+        <% for(let d of commentsList) { %>
+        <tr>
+            <td><%= d.userid %></td>
+            <td><%= d.penid %></td>
+            <td><%= d.commentid %></td>
+            <td><%= d.commenttext %></td>
+            <td><%= d.createdat %></td>
+            <td>
+	        <a href="editcomment?commentid=<%=d._id%>">Edit Comment</a>
+	        <a href="delcomment?commentid=<%=d._id%>">Delete Comment</a>
+	        </td>
+			
+			
+			
+        </tr>
+        <% } %>
+    </table>
+</div>
+<%- include("footer"); %>

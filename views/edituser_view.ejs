@@ -1,0 +1,38 @@
+<%- include("header"); %>
+<div style="width:1200px; height:auto; min-height:500px; border:1px solid red;">
+    <form action="editUserSubmit" method="post">
+        <div>
+            Enter Name:-
+            <input type="text" name="name" value ="<%=userData.name%>" />
+        </div>
+        <div>
+            Enter Bio:-
+            <input type="text" name="bio" value ="<%=userData.bio%>" />
+        </div>
+        <div>
+            Enter Gender:-
+            <input type="text" name="gender" value ="<%=userData.gender%>" />
+        </div>
+        <div>
+            Enter Email:-
+            <input type="email" name="email" value ="<%=userData.email%>" />
+        </div>
+        <div>
+            Enter Password:-
+            <input type="password" name="password" value ="<%=userData.password%>" />
+        </div>
+        <div>
+            Enter X ID:-
+            <input type="text" name="Xid" value ="<%=userData.Xid%>" />
+        </div>
+        <div>
+            Enter GitHub ID:-
+            <input type="text" name="githubid" value ="<%=userData.githubid%>" />
+        </div>
+        <input type="hidden" value="<%=userData._id%>" name="userid" />
+        <p>
+            <input type="submit" value="Save"/>
+        </p>
+    </form>
+</div>
+<%- include("footer"); %>

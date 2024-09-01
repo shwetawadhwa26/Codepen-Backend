@@ -1,0 +1,24 @@
+<%- include("penheader"); %>
+<div style= "width:1200px; height:auto;
+min-height:500px; border:1px solid red;">
+<table align = "center">
+       <% for(let d of penList)  {
+	   %>
+	   <tr>
+	   <td><%=d.penid%></td> 
+	   <td><%=d.userid%></td>
+	   <td><%=d.title%></td>
+	   <td><%=d.htmlcode%></td>
+	   <td><%=d.csscode%></td>
+	   <td><%=d.jscode%></td>
+	   <td><%=d.createdat%></td>
+	   <td><%=d.updatedat%></td>
+	   <td><%=d.ForkedFromPenId%></td>
+	   <td>
+	   <a href="editpen?penid=<%=d._id%>">Edit Pen</a>
+	   <a href="delpen?penid=<%=d._id%>">Delete Pen</a>
+	   </td>
+	   </tr>
+	   <% }  %>
+</div>
+<%- include("penfooter"); %>

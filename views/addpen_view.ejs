@@ -1,0 +1,48 @@
+<%- include("penheader"); %>
+<div style= "width:1200px; height:auto;
+min-height:500px; border:1px solid red;">
+
+<form action = "addPenSubmit" method = "post">
+    <div>
+Enter userid :-
+     <div>
+	<input type="int" name="userid"/>
+	</div>
+Enter penid:-
+    <input type="int" name="penid" />
+	</div>
+	<div>
+Enter project title -
+	<input type="text" name="title"/>
+	</div>
+Enter html code:-
+	<div>
+	<input type="text" name="htmlcode"/>
+	</div>
+Enter css code :-
+	<div>
+	<input type="text" name="csscode/">
+	</div>
+Enter js code :-
+	<div>
+	<input type="text" name="jscode/">
+	</div>
+Enter created at :-
+	<div>
+	<input type="date" name="createdat"/>
+	</div>
+Enter updated at:-
+	<div>
+	<input type="date" name="updatedat"/>
+	</div>
+Enter the id where code has been forked  :-
+	<div>
+	<input type="text" name="ForkedFromPenId"/>
+	</div>
+
+	<p>
+        <input type="submit" value="Save" />
+	</p>
+</form>
+</div>
+<%- include("penfooter"); %>

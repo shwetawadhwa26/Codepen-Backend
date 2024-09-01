@@ -1,0 +1,51 @@
+<%- include("header"); %>
+<div style= "width:1200px; height:auto;
+min-height:500px; border:1px solid red;">
+
+<form action = "addUserSubmit" method = "post">
+    <div>
+Enter user :-
+     <div>
+	<input type="int" name="userid"/>
+	</div>
+Enter user name :-
+    <input type="text" name="name" />
+	</div>
+	<div>
+Enter user email -
+	<input type="email" name="email"/>
+	</div>
+Enter user password id:-
+	<div>
+	<input type="password" name="password"/>
+	</div>
+Enter user bio :-
+	<div>
+	<input type="text" name="bio/">
+	</div>
+Enter user gender:-
+	<div>
+	<input type="text" name="gender"/>
+	</div>
+Enter created at :-
+	<div>
+	<input type="date" name="createdat"/>
+	</div>
+Enter updated at:-
+	<div>
+	<input type="date" name="updatedat"/>
+	</div>
+Enter X_id :-
+	<div>
+	<input type="text" name="Xid"/>
+	</div>
+Enter github id
+	<div>
+	<input type="text" name="githubid"/>
+	</div>
+	<p>
+        <input type="submit" value="Save" />
+	</p>
+</form>
+</div>
+<%- include("footer"); %>

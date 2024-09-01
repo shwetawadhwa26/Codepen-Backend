@@ -1,0 +1,38 @@
+<%- include("penheader"); %>
+<div style="width:1200px; height:auto; min-height:500px; border:1px solid red;">
+    <form action="editPenSubmit" method="post">
+        <div>
+            Enter pen ID:-
+            <input type="number" name="penid" value="<%=penData.penid%>" />
+        </div>
+        <div>
+            Enter user ID:-
+            <input type="number" name="userid" value="<%=penData.userid%>" />
+        </div>
+        <div>
+            Enter title:-
+            <input type="text" name="title" value="<%=penData.title%>" />
+        </div>
+        <div>
+            Enter HTML code:-
+            <input type="text" name="htmlcode" value="<%=penData.htmlcode%>" />
+        </div>
+        <div>
+            Enter CSS code:-
+            <input type="text" name="csscode" value="<%=penData.csscode%>" />
+        </div>
+        <div>
+            Enter JS code:-
+            <input type="text" name="jscode" value="<%=penData.jscode%>" />
+        </div>
+        <div>
+            Enter the ID where the code has been forked from:-
+            <input type="number" name="ForkedFromPenid" value="<%=penData.ForkedFromPenid%>" />
+        </div>
+        <input type="hidden" name="penid" value="<%=penData._id%>" />
+        <p>
+            <input type="submit" value="Save" />
+        </p>
+    </form>
+</div>
+<%- include("penfooter"); %>

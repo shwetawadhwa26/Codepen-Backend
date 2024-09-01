@@ -1,0 +1,31 @@
+additem_view<%- include("itemheader"); %>
+<div style= "width:1200px; height:auto;
+min-height:500px; border:1px solid red;">
+
+<form action = "addItemSubmit" method = "post">
+    <div>
+Enter item name:-
+        <input type="text" name="iname" />
+	</div>
+	   <div>
+Enter item price:-
+        <input type="text" name="price" />
+	</div>
+	   <div>
+Enter item category:-
+        <input type="text" name="category" />
+	</div>
+	   <div>
+Enter item color:-
+        <input type="text" name="color" />
+	</div>
+	   <div>
+Enter item dom:-
+        <input type="date" name="dom" />
+	</div>
+	<p>
+        <input type="submit" value="Save" />
+	</p>
+</form>
+</div>
+<%- include("itemfooter"); %>

@@ -1,0 +1,31 @@
+<%- include("header"); %>
+<div style= "width:1200px; height:auto;
+min-height:500px; border:1px solid red;">
+<table align = "center">
+       <% for(let d of userList)  {
+	   %>
+	   <tr>
+
+	   <td><%=d.name%></td>
+	   <td><%=d.bio%></td>
+	   <td><%=d.email%></td>
+	   <td><%=d.gender%></td>
+	   <td><%=d.password%></td>
+	   <td><%=d.gender%></td>
+	   <td><%=d.createdat%></td>
+	   <td><%=d.updatedat%></td>
+	   <td><%=d.Xid%></td>
+	   <td><%=d.githubid%></td>
+	   
+	   
+
+	   
+	   
+	   <td>
+	   <a href="edituser?userid=<%=d._id%>">Edit</a>
+	   <a href="deluser?userid=<%=d._id%>">Delete</a>
+	   </td>
+	   </tr>
+	   <% }  %>
+</div>
+<%- include("footer"); %>
